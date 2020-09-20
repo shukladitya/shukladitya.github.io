@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aditya Shukla</title>
+	<link rel="icon" href="css/asset/logodark.png" type="image/png" sizes="16x16">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+	<div id="topbar">
+		<div id="logo" onclick="location.href='index.html';"></div>
+		<i class="fas fa-moon"></i>
+		<i class="fas fa-link"></i>
+	</div>
+	<div id="intro">
+		<h1>Hi. I'm Aditya. A design minded developer focused on building beautiful interfaces & experiences.</h1>
+		<div id="outerradi">
+			<div id="avatar"></div>
+		</div>
+		<h2 id="mail">Get in touch<br></h2>
+		<h2 id="email" onclick="location.href='mailto:shukladitya9@gmail.com';">shukladitya9@gmail.com</h2>
+	</div>
+	<div id="background">
+		<h2>Background</h2>
+		<p>I am an undergraduate student based in Bengaluru, India. I develop mobile/web applications. Though learning or working on something new makes me overjoyed, I don't sink my teeth into something, to which I can't give my 100%.<br><br>
+        As a developer, I enjoy bridging the gap between engineering and design — combining my technical knowledge with my keen eye for design to create a beautiful product. My goal is to always build applications that are scalable and efficient under the hood while providing engaging, pixel-perfect user experiences.<br><br></p>
+        <h3 class="furtherlink" onclick="window.open('resume/aditya_resume.pdf')">View Résumé&nbsp&nbsp<i class="fas fa-arrow-right"></i></h3>
+       
+	</div>
+	<div id="projects">
+		<h2>Projects</h2>
+		<div id="project1" onclick="toogletasto();"></div>
+		<p>An android app using TasteDive API to generate similar items under same genre of Movies, Games, Authors, Music, Books etc. Using shared preferences, the choices of the user can be cashed for future use.<br>
+		<i class="fas fa-play-circle" onclick="toogletasto();"></i>
+		<i class="fab fa-google-play" onclick="window.open('http://www.mediafire.com/file/9dp1ckpx05q3a7t/tasto.apk/file')"></i>
+		<i class="fab fa-github" onclick="window.open('https://github.com/shukladitya/flutter_tasto')"></i>	
+		</p>
+		<div id="tastovideo" class="popup">
+			<div class="popupbox"><i class="fas fa-times" onclick="toogletasto();"></i>
+				<video id="vid1" controls src="video/tasto.m4v">
+                </video>
+            </div>
+		</div>
+		<div id="project2" onclick="toogleatmo()"></div>
+		<p id="project2p">An App that picks the coordinate of the device , tells weather, air quality and forecasts of the location and warns on harsh conditions.<br>
+		<i class="fas fa-play-circle" onclick="toogleatmo()"></i>
+		<i class="fab fa-google-play" onclick="window.open('http://www.mediafire.com/file/y5vvfrhqppkoajj/Atmo.apk/file')"></i>
+		<i class="fab fa-github" onclick="window.open('https://github.com/shukladitya/flutter_atmo')"></i>	
+		</p>
+		<div id="atmovideo" class="popup">
+			<div class="popupbox"><i class="fas fa-times" onclick="toogleatmo()"></i>
+				<video id="vid2" controls src="video/atmo.m4v">
+                </video>
+            </div>
+		</div>
+		<div id="project3" onclick="window.open('old_portfolio/index.html')"></div>
+		<p id="project3p">A responsive SPA resume template, built with HTML, CSS, JS and bootstrap. Minimal design ,smooth performance in animations and functionalities.<br>
+		<i class="fas fa-play-circle" onclick="window.open('old_portfolio/index.html')"></i>
+		<i class="fab fa-github" onclick="window.open('https://github.com/shukladitya/flutter_tasto')"></i>	
+		</p>
+		<h3 class="furtherlink" onclick="window.open('resume/aditya_resume.pdf')">View all projects&nbsp&nbsp<i class="fas fa-arrow-right"></i></h3>
+	</div>
+	<div id="blogs">
+		<h2>Blogs</h2>
+		<i class="fas fa-th-list" id="listview" onclick="blogview=1;toggleview()"></i>
+		<i class="fas fa-th-large" id="tileview" onclick="blogview=0; toggleview()"></i>
+		<div class="blog blog1tile" id="blog1">
+			<div class="blogimage"></div>
+			<h3 class="title">Handy Widgets of Flutter</h3>
+			<h4 class="subtitle">September 15, 2020 - 5 min read</h4>
+		</div>
+		<div class="blog blog2tile" id="blog2">
+			<div class="blogimage"></div>
+			<h3 class="title">Array Functions in JS</h3>
+			<h4 class="subtitle">September 15, 2020 - 7 min read</h4>
+		</div>
+		<div class="blog blog3tile" id="blog3">
+			<div class="blogimage"></div>
+			<h3 class="title">Event Programming with C</h3>
+			<h4 class="subtitle">September 15, 2020 - 3 min read</h4>
+		</div>
+		<div class="blog blog4tile" id="blog4">
+			<div class="blogimage"></div>
+			<h3 class="title">CSS One-Liner Tricks</h3>
+			<h4 class="subtitle">September 15, 2020 - 5 min read</h4>
+		</div>
+	</div>
+	<div id="bottombar">
+		<div id="spacer">
+		</div>
+		<div id="line">
+		</div>
+		<h3>2020 Aditya Shukla
+		<i class="fab fa-medium" onclick="window.open('www.medium.com')"></i>
+		<i class="fab fa-instagram" onclick="window.open('https://www.instagram.com/adity.a.s/')"></i>
+		<i class="fab fa-facebook" onclick="window.open('https://www.facebook.com/profile.php?id=100008226843610')"></i>
+		<i class="fab fa-github" onclick="window.open('https://github.com/shukladitya')"></i>
+		<i class="fab fa-linkedin" onclick="window.open('https://www.linkedin.com/in/aditya10/')"></i>
+		</h3>
+    </div>
+<script type="text/javascript" src="js/JS.js"></script>	
+</body>
+</html>
