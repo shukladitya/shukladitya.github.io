@@ -1,3 +1,8 @@
+console.log(document.querySelector(".fa-link").addEventListener("click",openabout));
+function openabout(){
+	location.href='about.html';
+	console.log('hello');
+}
 daynight=document.querySelector(".fa-moon");
 daynight.addEventListener("click",toggle);
 var daynightflag=0;

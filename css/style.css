@@ -425,3 +425,46 @@ body{
 #bottombar i:hover{
 	color: var(--iconhover);
 }
+/*---------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------ABOUT PAGE---------------------------------------------------------------------------------*/
+#aboutspacer{
+	height: 100px;
+}
+#aboutphoto{
+	height: 200px;
+   	width: 200px;
+   	clear: both;
+   	background-size: cover;
+	background-image: url('asset/avatarcolor.jpg');
+	border-radius: 50%;
+	box-shadow: 0px 0px 50px 5px var(--shadowcolor);
+	text-align: center;
+	margin-left: 43%;
+}
+#aboutlink{
+	clear: both;
+	margin-top: 100px;
+	display: flex;
+	justify-content: space-around;
+	padding-left: 300px;
+	padding-right: 300px;
+	margin-bottom: 100px;
+}
+#aboutpara{
+	text-align: center;
+	font-size: 40px;
+	margin-top: 50px;
+	font-weight: 600;
+}
+#aboutlink i{
+	color:var(--iconnotselected);
+	font-size: 30px;
+	cursor: pointer;
+    transition: all 0.7s;
+	transition-timing-function: cubic-bezier(0, 0.55, 1, 2.15);
+	float: right;
+}
+#aboutlink i:hover{
+	color: var(--iconhover);
+}
