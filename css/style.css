@@ -456,6 +456,7 @@ body{
 	font-size: 40px;
 	margin-top: 50px;
 	font-weight: 600;
+	color: var(--text);
 }
 #aboutlink i{
 	color:var(--iconnotselected);
