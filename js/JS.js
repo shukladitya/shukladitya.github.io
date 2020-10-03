@@ -1,8 +1,27 @@
-console.log(document.querySelector(".fa-link").addEventListener("click",openabout));
+document.querySelector("#avatar").addEventListener("click",openabout);
 function openabout(){
 	location.href='about.html';
 	console.log('hello');
 }
+document.querySelector(".fa-link").addEventListener("click",copyfunction);
+function copyfunction(){
+	let linktext=document.querySelector("input[type='text']");
+	linktext.select();
+	linktext.setSelectionRange(0, 9999)
+	document.execCommand('copy');
+	function tempAlert(msg,duration)
+	{
+ 	var el = document.createElement("div");
+ 	el.setAttribute("style",`position:absolute;top:${document.querySelector(".fa-link").offsetTop-37}px;left:${document.querySelector(".fa-link").offsetLeft-15}px;background-color:var(--backgroundgradient);padding:5px;border-radius:5px;`);
+ 	el.innerHTML = msg;
+ 	setTimeout(function(){
+  	el.parentNode.removeChild(el);
+ 	},duration);
+ 	document.body.appendChild(el);
+	}
+	tempAlert("Copied",1200);
+}
+/////////////////////////////////////////////above is the recent code/////////////////////
 daynight=document.querySelector(".fa-moon");
 daynight.addEventListener("click",toggle);
 var daynightflag=0;
