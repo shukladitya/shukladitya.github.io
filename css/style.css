@@ -470,3 +470,93 @@ body{
 #aboutlink i:hover{
 	color: var(--iconhover);
 }
+	/*----------------------------------this section is view all project-------------------------------------*/
+#viewAll{
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(1,1,1,0.6);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 4;
+	display:none;  
+}
+#viewAllwhitepart{
+	width: 70vw;
+	height: 70vh;
+	background-color: var(--backgroundcolor);
+	z-index: 6;
+	margin:15vh auto;
+	overflow: auto;
+	position: relative;
+}
+#viewAllwhitepart i{
+	float: right;
+	font-size: 35px;
+	margin-top: 5px;
+	margin-right:12px;
+	cursor: pointer; 
+}
+.projectviewall{
+	clear: both;
+	margin-top: 40px;
+	padding: 20px;
+}
+.projectviewallimage{
+	width: 300px;
+	height: 180px;
+	background-color: dodgerblue;
+	float: left;
+	margin-right: 20px;
+	margin-left: 40px;
+	margin-bottom: 40px;
+}
+.projectviewall p{
+	margin: 0;
+	color: var(--text);
+	font-family: 'Calibre';
+	font-size: 24px;
+}
+.projectviewall i{
+	color:var(--iconnotselected);
+	font-size: 35px;
+	padding-right: 30px;
+	cursor: pointer;
+    transition: all 0.7s;
+	transition-timing-function: cubic-bezier(0, 0.55, 1, 2.15);
+}
+.projectviewall i:hover{
+	color: var(--iconhover);
+}
+#pic1{
+	background-image: url('asset/viewall/1.jpg');
+	background-size:cover;
+}
+#pic2{
+	background-image: url('asset/viewall/2.jpg');
+	background-size:cover;
+}
+#pic3{
+	background-image: url('asset/viewall/3.jpg');
+	background-size:cover;
+}
+#pic4{
+	background-image: url('asset/viewall/4.png');
+	background-size:cover;
+}
+#pic5{
+	background-image: url('asset/viewall/5.png');
+	background-size:cover;
+}
+#pic6{
+	background-image: url('asset/viewall/6.jpg');
+	background-size:cover;
+}
+#pic7{
+	background-image: url('asset/viewall/7.jpg');
+	background-size:cover;
+}
+	/*----------------------------------this section is view all project-------------------------------------*/
+
+
+

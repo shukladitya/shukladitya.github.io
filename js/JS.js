@@ -1,7 +1,6 @@
 document.querySelector("#avatar").addEventListener("click",openabout);
 function openabout(){
 	location.href='about.html';
-	console.log('hello');
 }
 document.querySelector(".fa-link").addEventListener("click",copyfunction);
 function copyfunction(){
@@ -21,7 +20,11 @@ function copyfunction(){
 	}
 	tempAlert("Copied",1200);
 }
-/////////////////////////////////////////////above is the recent code/////////////////////
+///////////////////////////////////above is the recent code(link from avatar and copy url when link icon clicked)/////////////////////
+function viewalltoggle(){
+	document.querySelector('#viewAll').style.display!='block'?document.querySelector('#viewAll').style.display='block':document.querySelector('#viewAll').style.display='none';
+}
+///////////////////////////////////above is viewall toggle this is also recent code/////////////////////
 daynight=document.querySelector(".fa-moon");
 daynight.addEventListener("click",toggle);
 var daynightflag=0;
