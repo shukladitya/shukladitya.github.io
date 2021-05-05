@@ -1,3 +1,54 @@
+//cursor code and background colour change
+let cursor = document.querySelector('.cursor');
+let curX=0;
+let curY=0;
+let curcolour='black';
+document.addEventListener('mousemove',(e)=>{
+	curX=e.clientX;
+	curY=e.clientY;
+	cursor.setAttribute("style",`top:${curY-10+window.scrollY}px;left:${curX-5}px;background-color:${curcolour}`);
+});
+document.addEventListener('scroll',(e)=>{
+	console.log(window.scrollY);
+	cursor.setAttribute("style",`top:${curY-10+window.scrollY}px;left:${curX-5}px;background-color:${curcolour}`);
+	if(window.scrollY<851){
+		daynightflag==1?document.documentElement.style.setProperty('--backgroundcolor','#111216'):document.documentElement.style.setProperty('--backgroundcolor','#FAFAFA');
+		daynightflag==1?curcolour='white':curcolour='black';
+	}
+	if(window.scrollY>850)
+	{
+		document.documentElement.style.setProperty('--backgroundcolor','#DAF3F4');
+		curcolour='#027D7E';
+		cursor.setAttribute("style",`top:${curY-10+window.scrollY}px;left:${curX-5}px;background-color:${curcolour}`);
+	}
+	if(window.scrollY>1870)
+	{
+		document.documentElement.style.setProperty('--backgroundcolor','#EABBCA');
+		curcolour='#8367B2';
+		cursor.setAttribute("style",`top:${curY-10+window.scrollY}px;left:${curX-5}px;background-color:${curcolour}`);
+	}
+	if(window.scrollY>2970)
+	{
+		document.documentElement.style.setProperty('--backgroundcolor','#C4BCEC');
+		curcolour='#7D6BD5';
+		cursor.setAttribute("style",`top:${curY-10+window.scrollY}px;left:${curX-5}px;background-color:${curcolour}`);
+	}
+	if(window.scrollY>4100)
+	{
+		document.documentElement.style.setProperty('--backgroundcolor','#FFE1E6');
+		curcolour='#DA8E8D';
+		cursor.setAttribute("style",`top:${curY-10+window.scrollY}px;left:${curX-5}px;background-color:${curcolour}`);
+	}
+	if(window.scrollY>5465)
+	{
+		daynightflag==1?document.documentElement.style.setProperty('--backgroundcolor','#111216'):document.documentElement.style.setProperty('--backgroundcolor','#FAFAFA');
+		daynightflag==1?curcolour='white':curcolour='black';
+	}		
+});
+//cursor code and background colour change
+
+
+
 document.querySelector("#avatar").addEventListener("click",openabout);
 function openabout(){
 	location.href='about.html';
@@ -38,6 +89,7 @@ function toggle(){
 						document.documentElement.style.setProperty('--text','white');
 						document.documentElement.style.setProperty('--shadowcolor','black');
 						document.getElementById('logo').style.backgroundImage = "url('css/asset/logolight.png')";
+						curcolour='white';
 						daynightflag=1;
 					   }
 	else{   
@@ -48,27 +100,29 @@ function toggle(){
 			document.documentElement.style.setProperty('--text','black');
 			document.documentElement.style.setProperty('--shadowcolor','#7D7D7D');
 			document.getElementById('logo').style.backgroundImage = "url('css/asset/logodark.png')";
+			curcolour='black';
 			daynightflag=0;
 	}
 }
 
-function toogletasto(){
-	if (document.getElementById('tastovideo').style.display=='block') {
-		document.getElementById('tastovideo').style.display='none';
-		document.getElementById('vid1').pause();
-	}
-	else 
-		document.getElementById('tastovideo').style.display='block';
+// function toogletasto(){
+// 	if (document.getElementById('tastovideo').style.display=='block') {
+// 		document.getElementById('tastovideo').style.display='none';
+// 		document.getElementById('vid1').pause();
+// 	}
+// 	else 
+// 		document.getElementById('tastovideo').style.display='block';
 
-}
-function toogleatmo(){
-	if (document.getElementById('atmovideo').style.display=='block') {
-		document.getElementById('atmovideo').style.display='none';
-		document.getElementById('vid2').pause();
-	}
-	else 
-		document.getElementById('atmovideo').style.display='block';
-}
+// }
+// function toogleatmo(){
+// 	if (document.getElementById('atmovideo').style.display=='block') {
+// 		document.getElementById('atmovideo').style.display='none';
+// 		document.getElementById('vid2').pause();
+// 	}
+// 	else 
+// 		document.getElementById('atmovideo').style.display='block';
+// }
+
 
 var blogview=0;
 function toggleview(){
