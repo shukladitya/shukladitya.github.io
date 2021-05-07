@@ -28,6 +28,27 @@ body{
 	background-color: var(--backgroundcolor);
 	transition: all 1s;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--text); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--iconnotselected); 
+}
 .cursor{
 	width: 10px;
 	height: 10px;
