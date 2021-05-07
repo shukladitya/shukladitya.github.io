@@ -54,25 +54,25 @@ document.addEventListener('scroll',(e)=>{
 		curcolour='#027D7E';
 		cursor.setAttribute("style",`top:${curY-10+window.scrollY}px;left:${curX-5}px;background-color:${curcolour}`);
 	}
-	if(window.scrollY>1870)
+	if(window.scrollY>1820)
 	{
 		document.documentElement.style.setProperty('--backgroundcolor','#EABBCA');
 		curcolour='#8367B2';
 		cursor.setAttribute("style",`top:${curY-10+window.scrollY}px;left:${curX-5}px;background-color:${curcolour}`);
 	}
-	if(window.scrollY>2970)
+	if(window.scrollY>2870)
 	{
 		document.documentElement.style.setProperty('--backgroundcolor','#C4BCEC');
 		curcolour='#7D6BD5';
 		cursor.setAttribute("style",`top:${curY-10+window.scrollY}px;left:${curX-5}px;background-color:${curcolour}`);
 	}
-	if(window.scrollY>4100)
+	if(window.scrollY>3850)
 	{
 		document.documentElement.style.setProperty('--backgroundcolor','#FFE1E6');
 		curcolour='#DA8E8D';
 		cursor.setAttribute("style",`top:${curY-10+window.scrollY}px;left:${curX-5}px;background-color:${curcolour}`);
 	}
-	if(window.scrollY>5465)
+	if(window.scrollY>5165)
 	{
 		daynightflag==1?document.documentElement.style.setProperty('--backgroundcolor','#111216'):document.documentElement.style.setProperty('--backgroundcolor','#FAFAFA');
 		daynightflag==1?curcolour='white':curcolour='black';
