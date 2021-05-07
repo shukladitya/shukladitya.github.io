@@ -1,4 +1,38 @@
 //cursor code and background colour change
+let cursorBoundary = [];
+projectImages = document.querySelectorAll('.project-image');
+forCursor = document.querySelectorAll('.forcursor');
+
+projectImages.forEach((element)=>{
+	element.addEventListener('mouseenter',()=>{
+		cursorBoundary.push(element.getBoundingClientRect().top);
+		cursorBoundary.push(element.getBoundingClientRect().right);
+		cursorBoundary.push(element.getBoundingClientRect().bottom);
+		cursorBoundary.push(element.getBoundingClientRect().left);
+		cursor.classList.add('cursor-big');
+	});
+});
+forCursor.forEach((element)=>{
+	element.addEventListener('mouseenter',()=>{
+		cursorBoundary.push(element.getBoundingClientRect().top);
+		cursorBoundary.push(element.getBoundingClientRect().right);
+		cursorBoundary.push(element.getBoundingClientRect().bottom);
+		cursorBoundary.push(element.getBoundingClientRect().left);
+		cursor.classList.add('cursor-big');
+	});
+});
+document.addEventListener('mousemove',(e)=>{
+	if(e.clientY<cursorBoundary[0]||e.clientX>cursorBoundary[1]||e.clientY>cursorBoundary[2]||e.clientX<cursorBoundary[3])
+		{	cursor.classList.remove('cursor-big');
+			cursorBoundary=[];
+		}
+});
+document.addEventListener('scroll',(e)=>{
+			cursor.classList.remove('cursor-big');
+			cursorBoundary=[];
+		
+});
+
 let cursor = document.querySelector('.cursor');
 let curX=0;
 let curY=0;
@@ -9,7 +43,6 @@ document.addEventListener('mousemove',(e)=>{
 	cursor.setAttribute("style",`top:${curY-10+window.scrollY}px;left:${curX-5}px;background-color:${curcolour}`);
 });
 document.addEventListener('scroll',(e)=>{
-	console.log(window.scrollY);
 	cursor.setAttribute("style",`top:${curY-10+window.scrollY}px;left:${curX-5}px;background-color:${curcolour}`);
 	if(window.scrollY<851){
 		daynightflag==1?document.documentElement.style.setProperty('--backgroundcolor','#111216'):document.documentElement.style.setProperty('--backgroundcolor','#FAFAFA');
@@ -43,6 +76,7 @@ document.addEventListener('scroll',(e)=>{
 	{
 		daynightflag==1?document.documentElement.style.setProperty('--backgroundcolor','#111216'):document.documentElement.style.setProperty('--backgroundcolor','#FAFAFA');
 		daynightflag==1?curcolour='white':curcolour='black';
+		cursor.setAttribute("style",`top:${curY-10+window.scrollY}px;left:${curX-5}px;background-color:${curcolour}`);
 	}		
 });
 //cursor code and background colour change
@@ -124,6 +158,8 @@ function toggle(){
 // }
 
 
+
+// --------------------------------------------blogs-----------------
 var blogview=0;
 function toggleview(){
 	console.log(blogview);

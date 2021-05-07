@@ -19,6 +19,7 @@
     font-weight: 300;
     font-style: normal;
   }
+
 body{
 	padding:0;
 	margin: 0;
@@ -36,7 +37,24 @@ body{
 	border-radius: 50%;
 	position: absolute;
 	background-color: black;
+	transition: height 0.3s,width 0.3s;
 }
+.cursor-big{
+	width: 75px;
+	height: 75px;
+	opacity: 0.85;
+}
+.cursor-big::before{
+	content: "view\aproject";
+	font-size:20px;
+	font-family: 'Calibre';
+	font-weight: bold;
+  	display: block;
+	text-align: center;
+	vertical-align: center;
+	transform: translateY(22%);
+}
+
 ::-moz-selection { /* Code for Firefox */;
   background: #FCDF3D;
 }
