@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Hostel App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../css/asset/logodark.png" type="image/png" sizes="16x16">
+	<link rel="stylesheet" type="text/css" href="hostelapp.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+	<div class="cursor"></div>
+	<div id="topbar">
+		<div id="logo" onclick="location.href='../index.html';"></div>
+		<i class="fas fa-moon" title="Toggle day/night"></i>
+		<i class="fas fa-link" title="Copy URL to clipboard"></i>
+		<input style="opacity: 0;transform: scale(0);" type="text" value="http://shukladitya.github.io/" name="">
+	</div>
+	<div id="intro-section">
+		<h4>My Hostel App</h4>
+		<h2>Solution for all hostel registers, paperwork and beyond</h2>
+	</div>
+	<div id="intro-image" class="parallax-window" data-parallax="scroll" data-image-src="asset/hostelapp/1.jpg"></div>
+	<div id="challenge-section">
+		<h3>The challenge</h3>
+		<p>A student has to face a lot of registers during the period of stay at a hostel. The app solves this problem by including all the options that one will need. Also, it could be tough to find people of similar interests, especially if you are new to the place, the app has a section to search people based on their interests and skills. Pals can be called in situations where money can split in a group.<br><br><span onclick="window.open('https://jsshostel.herokuapp.com/')">Open web app</span></p>
+	</div>
+	
+	<div id="phototrain-section">
+		<h2>Every element <br>made with love</h2>
+		<div id="club1">
+			<div class="phototrain-image type1" class="parallax-window" data-parallax="scroll" data-image-src="asset/hostelapp/2.jpg"></div>
+			<h5>From colors to tone styles everything is meticulously thought out.</h5>
+		</div>
+		<div id="club2">
+			<div class="phototrain-image type1" class="parallax-window" data-parallax="scroll" data-image-src="asset/hostelapp/3.jpg"></div>
+		</div>
+		<div id="club3">
+			<div class="phototrain-image type2" class="parallax-window" data-parallax="scroll" data-image-src="asset/hostelapp/4.gif"></div>
+			<h5>3-D alumni cards<br>to search people residing<br>in the hostel</h5>
+		</div>
+		<div id="club3">
+			<div class="phototrain-image type2" class="parallax-window" data-parallax="scroll" data-image-src="asset/hostelapp/5.jpg"></div>
+			<h5>Used by 200+ students.</h5>
+		</div>
+	</div>	
+
+	<div style="margin-bottom: 50vh;margin-top: 30vh;" id="intro-image" class="parallax-window" data-parallax="scroll" data-image-src="asset/hostelapp/6.jpg"></div>
+
+	<div id="next-project"><span>Next Project</span></div>
+	<div id="contact">
+		<div id="email">
+			<h4>Get in touch</h4>
+			<span onclick="location.href='mailto:shukladitya9@gmail.com';">shukladitya9@gmail.com</span>
+		</div>
+		<div id="social-links">
+			<span onclick="window.open('https://www.linkedin.com/in/aditya10/')">linkedin</span><span onclick="window.open('https://github.com/shukladitya')">github</span><span onclick="window.open('https://www.instagram.com/adity.a.s/')">instagram</span>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="hostelapp.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="parallax.min.js"></script>
+</html>

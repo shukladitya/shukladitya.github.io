@@ -1,0 +1,369 @@
+*{
+	cursor: none;
+	box-sizing: border-box;
+}
+:root{
+	--backgroundcolor:#FAFAFA;
+	--backgroundgradient:#D8D8D8;
+	--iconnotselected:#7D7D7D;
+	--iconhover:black;
+	--text:black;
+	--shadowcolor:#7D7D7D;
+}
+@font-face {
+    font-family: 'Calibre';
+    src: local('Calibre Light'), local('Calibre-Light'),
+        url('Calibre-Light.woff2') format('woff2'),
+        url('Calibre-Light.woff') format('woff'),
+        url('Calibre-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+body{
+	padding:0;
+	margin: 0;
+	font-family: sans-serif;
+	background-image: linear-gradient(transparent 92%,var(--backgroundgradient));
+	background-color: var(--backgroundcolor);
+	transition: all 1s;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--text); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--iconnotselected); 
+}
+.cursor{
+	width: 10px;
+	height: 10px;
+	top:0;
+	left: 0;
+	z-index: 99999999;
+	border-radius: 50%;
+	position: absolute;
+	background-color: var(--iconhover);
+	transition: height 0.3s,width 0.3s;
+}
+::-moz-selection { /* Code for Firefox */;
+  background: #FCDF3D;
+}
+
+::selection {
+  background: #FCDF3D;
+}
+#topbar{
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 50px;
+}
+#logo{
+	width: 60px;
+	height: 60px;
+	background-image: url("../css/asset/logodark.png");
+	background-size: contain;
+	float: left;
+	cursor: none;
+}
+#topbar i{
+	color: var(--iconnotselected);
+	float: right;
+	font-size: 25px;
+	margin-left: 50px;
+	margin-top:25px;
+	cursor: none;
+	transition: all 0.7s;
+	transition-timing-function: cubic-bezier(0, 0.55, 1, 2.15);
+}
+#topbar i:hover{
+	color: var(--iconhover);
+}
+/*-----------------------------------after common topbar*/
+#intro-section{
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-top: 15vh;
+}
+#intro-section h4{
+	font-size: 25px;
+	font-family: 'Calibre';
+	color: var(--text);
+}#intro-section h2{
+	font-size: 70px;
+	font-family: 'Calibre';
+	color: var(--text);
+	margin-top: 20px;
+}
+#intro-image{
+	height: 100vh;
+	z-index: 2;
+}
+#challenge-section{
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-top: 30vh;
+	margin-bottom: 30vh;
+}
+#challenge-section h3{
+	display: inline-block;
+	width: 30%;
+	margin-top: 0px;
+	font-size: 25px;
+	vertical-align: top;
+	font-family: 'Calibre';
+	color: var(--text);
+}
+#challenge-section p{
+	display: inline-block;
+	margin-top: 0;
+	width: 69%;
+	font-family: 'Calibre';
+	color: var(--text);
+	font-size: 30px;
+}
+#challenge-section span{
+	border-bottom: 1px solid var(--text);
+	transition: all 0.3s;
+}
+#challenge-section span:hover{
+	border-bottom: 4px solid var(--text);
+}
+#video-section{
+	height: 100vh;
+	width: 90vw;
+	display: block;
+	margin:auto;
+}
+#phototrain-section{
+	margin-top: 40vh;
+	margin-left: 200px;
+	margin-right: 200px;
+}
+#phototrain-section h2{
+	font-size: 70px;
+	font-family: 'Calibre';
+	color: var(--text);
+	margin-top: 20px;
+}
+.phototrain-image{
+	z-index: 2;
+	display: inline-block;
+
+}
+.type1{
+	width:47%;
+	height: 70vh;
+}
+.type2{
+	width:45%;
+	height: 100vh;
+}
+#club1{
+	display: inline-block;
+	width: 45%;
+	margin-right: 4%;
+}
+#club1 div{
+	width: 100%;
+}
+#club1 h5{
+	font-size: 27px;
+	font-family: 'Calibre';
+	color: var(--text);
+	margin-top: 50px;
+	text-align: center;
+	font-weight: normal;
+	margin-bottom: 50px;
+}
+#club2{
+	display: inline-block;
+	width: 45%;
+	vertical-align: bottom;
+}
+#club2 div{
+	width: 100%;
+}
+#club3{
+	display: inline-block;
+	width: 45%;
+	margin-right: 4%;
+}
+#club3 div{
+	width: 100%;
+}
+#club3 h5{
+	font-size: 27px;
+	font-family: 'Calibre';
+	color: var(--text);
+	margin-top: 50px;
+	text-align: center;
+	font-weight: normal;
+}
+.last-image{
+	margin-top: 50px;
+}
+
+
+#next-project{
+	text-align: center;
+	margin-bottom: 45vh;
+}
+#next-project span{
+	display: inline;
+	font-size: 70px;
+	font-family: 'Calibre';
+	font-weight: bold;
+	color: var(--text);
+	border-bottom: 2px solid var(--text);
+	transition: all .2s;
+}
+#next-project span:hover{
+	border-bottom: 5px solid var(--text);
+}
+
+#contact{
+	height: 50vh;
+	font-family: 'Calibre';
+	background-color: var(--text);
+	color: var(--backgroundcolor);
+	cursor: default;
+}
+#email{
+	display: inline-block;
+	margin-left: 100px;
+	cursor: default;
+	width: 50%;
+}
+#email h4{
+	font-size: 40px;
+	cursor: default;
+	margin-bottom: 20px;
+	margin-top: 18vh;
+}
+#email span{
+	font-size: 20px;
+	cursor: pointer;
+}
+#social-links{
+	display: inline-block;
+	margin-right: 100px;
+	width: 30%;
+	vertical-align: top;
+	margin-top: 18vh;
+	font-size: 25px;
+	text-align: right;
+}
+#social-links span{
+	margin-left: 40px;
+	cursor: pointer;
+}
+/*------------------------------------responsive-code*/
+@media(max-width: 1000px){
+	#social-links{
+	margin-right: 0px;
+}
+#email{
+	width: 30%;
+}
+
+}
+
+@media(orientation:portrait){
+	#topbar{
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	#intro-section {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10vh;
+	}
+	#challenge-section {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30vh;
+    margin-bottom: 0vh;
+}
+	#challenge-section p{
+	    width: 100%
+	}
+	#video-section{
+		height: 50vh;
+	}
+	#phototrain-section {
+    margin-top: 20vh;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+	.type1{
+	width:100%;
+}
+.type2{
+	width:100%;
+
+}
+#club1{
+	display: block;
+	width: 100%;
+	margin-right: 0%;
+}
+
+#club2{
+	display: block;
+	width: 100%;
+}
+
+#club3{
+	display: block;
+	width: 100%;
+	margin-right: 0%;
+}
+#club3 div{
+	width: 100%;
+}
+
+.last-image{
+	margin-top: 50px;
+}
+#next-project span{
+	font-size: 30px;
+}
+#contact{
+	height: auto;
+}
+#email{
+	margin-left: 20px;
+	width: 80%;
+	text-align: center;
+}
+#social-links{
+	display: block;
+	background-color: var(--text);
+	text-align: center;
+	margin-top: 10vh;
+}
+#social-links span{
+	font-size: 30px;
+	margin-left: 0px;
+}
+#social-links span:nth-child(2){
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+}

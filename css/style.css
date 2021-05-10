@@ -59,11 +59,13 @@ body{
 	position: absolute;
 	background-color: black;
 	transition: height 0.3s,width 0.3s;
+	pointer-events: none;
 }
 .cursor-big{
 	width: 75px;
 	height: 75px;
 	opacity: 0.85;
+	pointer-events: none;
 }
 .cursor-big::before{
 	content: "view\aproject";
@@ -74,6 +76,7 @@ body{
 	text-align: center;
 	vertical-align: center;
 	transform: translateY(22%);
+	pointer-events: none;
 }
 
 ::-moz-selection { /* Code for Firefox */;
